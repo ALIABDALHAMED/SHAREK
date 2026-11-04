@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using SHAREK.API.Features.Messaging;
-using SHAREK.API.Features.Notifications;
-using SHAREK.Domain.Features.Identity.Entities;
-using SHAREK.Infrastructure.Persistence;
-using SHAREK.Infrastructure.Persistence.Seed;
+using SHAREK.API.Data;
+using SHAREK.API.Data.Seed;
+using SHAREK.API.Modules.Identity.Entities;
+using SHAREK.API.Modules.Messaging.Hubs;
+using SHAREK.API.Modules.Notifications.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
