@@ -19,7 +19,7 @@ Copy `src/SHAREK.API/appsettings.Development.example.json` to `appsettings.Devel
 ## Database migrations
 
 ```powershell
-dotnet ef migrations add InitialCreate -p src/SHAREK.Infrastructure -s src/SHAREK.API -o Persistence/Migrations
+dotnet ef migrations add InitialSchema -p src/SHAREK.Infrastructure -s src/SHAREK.API -o Persistence/Migrations
 dotnet ef database update -p src/SHAREK.Infrastructure -s src/SHAREK.API
 ```
 
