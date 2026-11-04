@@ -1,0 +1,38 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+artifacts/
+
+# IDE and editor files
+.idea/
+.vs/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+*.user
+*.suo
+
+# Test and coverage output
+TestResults/
+coverage/
+coverage.*
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Local configuration and logs
+appsettings.Development.json
+appsettings.*.local.json
+.env
+.env.*
+!.env.example
+secrets.json
+*.secrets.json
+*.pfx
+*.key
+*.log
+
+# OS files
+Thumbs.db
+.DS_Store
