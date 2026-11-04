@@ -2,15 +2,15 @@ namespace SHAREK.Domain.Features.Admin.Entities;
 
 public sealed class AuditLog
 {
-    public Guid Id { get; init; }
+    public Guid Id { get; set; } = Guid.NewGuid();
 
-    public string Action { get; init; } = string.Empty;
+    public Guid AdminId { get; set; }
 
-    public string EntityName { get; init; } = string.Empty;
+    public Guid? TargetUserId { get; set; }
 
-    public string EntityId { get; init; } = string.Empty;
+    public string Action { get; set; } = string.Empty;
 
-    public string? UserId { get; init; }
+    public string? Details { get; set; }
 
-    public DateTimeOffset OccurredAt { get; init; }
+    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 }
