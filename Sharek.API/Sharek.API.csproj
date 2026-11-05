@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.33" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Common" Version="9.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.22">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.22" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Payments\Controllers\" />
+    <Folder Include="Areas\Payments\DTOs\" />
+    <Folder Include="Areas\Payments\Interfaces\" />
+    <Folder Include="Areas\Payments\Services\" />
+    <Folder Include="Areas\OrdersAndCommunication\Controllers\" />
+    <Folder Include="Areas\OrdersAndCommunication\DTOs\" />
+    <Folder Include="Areas\OrdersAndCommunication\Interfaces\" />
+    <Folder Include="Areas\OrdersAndCommunication\Services\" />
+    <Folder Include="Areas\Catalog\Controllers\" />
+    <Folder Include="Areas\Catalog\DTOs\" />
+    <Folder Include="Areas\Catalog\Interfaces\" />
+    <Folder Include="Areas\Catalog\Services\" />
+    <Folder Include="Areas\Identity\Controllers\" />
+    <Folder Include="Areas\Identity\DTOs\" />
+    <Folder Include="Areas\Identity\Interfaces\" />
+    <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Shared\Interfaces\" />
+    <Folder Include="Shared\Helpers\" />
+    <Folder Include="Shared\Repositories\" />
+  </ItemGroup>
+
+</Project>

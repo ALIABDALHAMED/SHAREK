@@ -1,6 +1,0 @@
-@SHAREK.API_HostAddress = http://localhost:5204
-
-GET {{SHAREK.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
